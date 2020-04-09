@@ -13,6 +13,7 @@
 		4DDABE4C243DA0880006227A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDABE4A243DA0880006227A /* Main.storyboard */; };
 		4DDABE4E243DA0890006227A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDABE4D243DA0890006227A /* Assets.xcassets */; };
 		4DDABE51243DA0890006227A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDABE4F243DA0890006227A /* LaunchScreen.storyboard */; };
+		4DDABE83243DEFDD0006227A /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDABE82243DEFDD0006227A /* CalculatorLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4DDABE50243DA0890006227A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DDABE52243DA0890006227A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDABE58243DA0BC0006227A /* Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calculator.entitlements; sourceTree = "<group>"; };
+		4DDABE82243DEFDD0006227A /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +62,38 @@
 				4DDABE58243DA0BC0006227A /* Calculator.entitlements */,
 				4DDABE44243DA0870006227A /* AppDelegate.swift */,
 				4DDABE46243DA0870006227A /* SceneDelegate.swift */,
-				4DDABE48243DA0870006227A /* ViewController.swift */,
-				4DDABE4A243DA0880006227A /* Main.storyboard */,
+				4DDABE7F243DEF140006227A /* Model */,
+				4DDABE80243DEF240006227A /* View */,
+				4DDABE81243DEF2D0006227A /* Controller */,
 				4DDABE4D243DA0890006227A /* Assets.xcassets */,
 				4DDABE4F243DA0890006227A /* LaunchScreen.storyboard */,
 				4DDABE52243DA0890006227A /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		4DDABE7F243DEF140006227A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DDABE82243DEFDD0006227A /* CalculatorLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DDABE80243DEF240006227A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DDABE4A243DA0880006227A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DDABE81243DEF2D0006227A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DDABE48243DA0870006227A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDABE83243DEFDD0006227A /* CalculatorLogic.swift in Sources */,
 				4DDABE49243DA0870006227A /* ViewController.swift in Sources */,
 				4DDABE45243DA0870006227A /* AppDelegate.swift in Sources */,
 				4DDABE47243DA0870006227A /* SceneDelegate.swift in Sources */,
@@ -289,7 +317,9 @@
 				CODE_SIGN_ENTITLEMENTS = Calculator/Calculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2SP9RY5F98;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +339,9 @@
 				CODE_SIGN_ENTITLEMENTS = Calculator/Calculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2SP9RY5F98;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
